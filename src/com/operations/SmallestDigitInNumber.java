@@ -1,4 +1,5 @@
 package com.operations;
+
 import java.util.Scanner;
 
 public class SmallestDigitInNumber {
@@ -19,7 +20,7 @@ public class SmallestDigitInNumber {
 		int small = 9;
 		while (number != 0) {
 			int res = number % 10;
-			if (res > small) {
+			if (res < small) {
 				small = res;
 			}
 			number = number / 10;

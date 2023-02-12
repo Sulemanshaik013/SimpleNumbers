@@ -1,4 +1,5 @@
 package com.operations;
+
 import java.util.Scanner;
 
 public class SumOfDigitsInNumber {

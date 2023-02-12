@@ -1,4 +1,5 @@
 package com.operations;
+
 import java.util.Scanner;
 
 public class SumOfFirstNNumbers {
@@ -16,9 +17,9 @@ public class SumOfFirstNNumbers {
 	}
 
 	private static int sumOfFirstNNumber(int number) {
-		int sum=0;
-		for(int i=0;i<number;i++) {
-			sum+=number;
+		int sum = 0;
+		for (int i = 0; i < number; i++) {
+			sum += number;
 		}
 		return sum;
 	}

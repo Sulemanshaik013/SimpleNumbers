@@ -1,4 +1,5 @@
 package com.operations;
+
 import java.util.Scanner;
 
 public class PalindromeNumberOrNot {
@@ -9,22 +10,22 @@ public class PalindromeNumberOrNot {
 		System.out.println("Enter Number");
 		int number = sc.nextInt();
 
-		palindrome(number);
+		isPalindrome(number);
 
 		sc.close();
 	}
 
-	private static void palindrome(int number) {
-		int rev = 0,temp=number;
+	private static void isPalindrome(int number) {
+		int rev = 0, temp = number;
 		while (number != 0) {
 			int res = number % 10;
 			rev = rev * 10 + res;
 			number = number / 10;
 		}
-		if(rev==temp) {
-			System.out.println(number +" is a palindrome number");
-		}else {
-			System.out.println(number +" is not a pallindrome number");
+		if (rev == temp) {
+			System.out.println(temp + " is a palindrome number");
+		} else {
+			System.out.println(temp + " is not a pallindrome number");
 		}
 	}
 }
